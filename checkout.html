@@ -561,14 +561,34 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script>
+               const data = `
+         Dear Customer,
+
+        Thank you for your purchase.Below is the summary of your order:
+
+        Product                      Total
+        ---------------------------------
+        House Coffee Original x 1    $110.00
+        Medium Roast Ground Coffee x 1   $19.00
+        Sub Total                    $129.00
+        Shipping Fee                 $10.00
+        ---------------------------------
+        Grand Total                  $139.00                
+
+        If you have any questions or need further assistance, please feel free to contact our customer support.
+
+        Thank you for choosing our products!
+
+        Best regards,
+        `
         function sendEmail() {
             console.log("sendEmail");
             Email.send({
                 SecureToken: "304588ab-7c28-41e0-acc7-ef31d0d83ff3",
                 To: 'kmbalachandraa@gmail.com',
                 From: "eclass101san@gmail.com",
-                Subject: "This is the subject",
-                Body: "And this is the body"
+                Subject: "These are the items that you have ordered",
+                Body: data
             }).then(
                 message => alert(message)
             );
