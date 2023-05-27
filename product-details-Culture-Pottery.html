@@ -251,7 +251,7 @@
                             </div>
                             <!-- Product Badge End -->
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide image-zoom"><img src="./assets/images/products/single/single-product-1.jpg" alt="Signature Blend Roast Coffee"></div>
+                                <div class="swiper-slide image-zoom"><img id='img-pd-c-p' src="./assets/images/products/single/single-product-1.jpg" alt="Signature Blend Roast Coffee"></div>
                                 <div class="swiper-slide image-zoom"><img src="./assets/images/products/single/single-product-2.jpg" alt="Signature Blend Roast Coffee"></div>
                                 <div class="swiper-slide image-zoom"><img src="./assets/images/products/single/single-product-3.jpg" alt="Signature Blend Roast Coffee"></div>
                                 <div class="swiper-slide image-zoom"><img src="./assets/images/products/single/single-product-4.jpg" alt="Signature Blend Roast Coffee"></div>
@@ -336,11 +336,11 @@
                             <div class="single-product-actions-item">
                                 <div class="product-quantity-count">
                                     <button class="dec qty-btn">-</button>
-                                    <input class="product-quantity-box" type="text" name="quantity" value="1">
+                                    <input class="product-quantity-box" id='qty-pd-c-p' type="text" name="quantity" value="1">
                                     <button class="inc qty-btn">+</button>
                                 </div>
                             </div>
-                            <div class="single-product-actions-item"><button class="btn btn-dark btn-primary-hover rounded-0">ADD TO CART</button></div>
+                            <div class="single-product-actions-item"><button class="btn btn-dark btn-primary-hover rounded-0" onclick='addToCart("qty-pd-c-p","Pottery", "99.00","img-pd-c-p")'>ADD TO CART</button></div>
                             <div class="single-product-actions-item"><button class="btn btn-icon btn-light btn-primary-hover rounded-0"><i class="sli-heart"></i></button></div>
                             <div class="single-product-actions-item"><button class="btn btn-icon btn-light btn-primary-hover rounded-0"><i class="sli-refresh"></i></button></div>
                         </div>
@@ -1306,6 +1306,8 @@
 
     <!-- Activation JS -->
     <script src="./assets/js/active.js"></script>
+    <script src='./assets/js/cart.js'></script>
+
 
 </body>
 
