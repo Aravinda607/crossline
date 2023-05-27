@@ -11,7 +11,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png">
-
+    <script src="./assets/js/checkout.js" defer></script>
     <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
 
     <!-- Fonts CSS -->
@@ -135,7 +135,7 @@
                                 <a href="index-3.html">Product Pages</a>
                                 <button class="mobile-sub-menu-toggle"></button>
                                 <ul class="mobile-sub-menu">
-                                    <li><a href="product-details.html">Product Details</a></li>
+                                    <li><a href="./product-details-Beverages-Coffee.html">Product Details</a></li>
                                     <li><a href="product-details-sticky-content.html">Product Details Sticky Content</a>
                                     </li>
                                     <li><a href="product-details-thumbnail-right.html">Product Details Right
@@ -344,27 +344,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>House Coffee Original x 1</td>
-                                        <td>$110.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Medium Roast Ground Coffee x 1</td>
-                                        <td>$19.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="border-top">Sub Total</td>
-                                        <td class="border-top">$129.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="border-top">Shipping Fee</td>
-                                        <td class="border-top">$10.00</td>
-                                    </tr>
+
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <th class="border-top">Grand Total</th>
-                                        <th class="border-top">$139.00</th>
+                                        <th class="border-top" id='grand-total'></th>
                                     </tr>
                                 </tfoot>
                             </table>
