@@ -547,26 +547,28 @@
 
     <script>
 
-        const data = `
-    Dear Customer,
+        const data1222 = JSON.parse(localStorage.getItem('productArray'));
 
-    Thank you for your purchase. Below is the summary of your order:
+        let formattedData = `Dear Customer,\n\nThank you for your purchase. Below is the summary of your order:\n\n`;
+        formattedData += `Product                      Total\n`;
+        formattedData += `---------------------------------\n`;
 
-    Product                      Total
-    ---------------------------------
-    House Coffee Original x 1    $110.00
-    Medium Roast Ground Coffee x 1   $19.00
-    Sub Total                    $129.00
-    Shipping Fee                 $10.00
-    ---------------------------------
-    Grand Total                  $139.00                
+        data1222.forEach((item) => {
+            formattedData += `${item.name} x ${item.count} ${' '.repeat(30 - item.name.length - item.count.toString().length)} $${item.total.toFixed(2)}\n`;
+        });
 
-    If you have any questions or need further assistance, please feel free to contact our customer support.
+        const subtotal = data1222.reduce((sum, item) => sum + item.total, 0);
+        const shippingFee = 10.00;
+        const grandTotal = subtotal + shippingFee;
 
-    Thank you for choosing our products!
+        formattedData += `---------------------------------\n`;
+        formattedData += `Sub Total${' '.repeat(30 - 'Sub Total'.length)} $${subtotal.toFixed(2)}\n`;
+        formattedData += `Shipping Fee${' '.repeat(30 - 'Shipping Fee'.length)} $${shippingFee.toFixed(2)}\n`;
+        formattedData += `---------------------------------\n`;
+        formattedData += `Grand Total${' '.repeat(30 - 'Grand Total'.length)} $${grandTotal.toFixed(2)}\n\n`;
+        formattedData += `If you have any questions or need further assistance, please feel free to contact our customer support.\n\n`;
+        formattedData += `Thank you for choosing our products!\n\nBest regards,`;
 
-    Best regards,
-  `;
         function sendEmail() {
             console.log("sendEmail");
             Email.send({
@@ -574,7 +576,7 @@
                 To: 'kmbalachandraa@gmail.com',
                 From: "eclass101san@gmail.com",
                 Subject: "These are the items that you have ordered",
-                Body: data.replace(/\n/g, "<br>")
+                Body: formattedData.replace(/\n/g, "<br>")
             }).then(
                 message => alert(message)
             );
