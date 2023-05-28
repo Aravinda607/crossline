@@ -549,7 +549,7 @@
 
         const data1222 = JSON.parse(localStorage.getItem('productArray'));
 
-        let formattedData = `Dear Customer,\n\nThank you for your purchase. Below is the summary of your order:\n\n`;
+        let formattedData = `Dear Seller,\n\nWe would like to inform you about a recent purchase made by a customer. Please find below the summary of the order:\n\n`;
         formattedData += `Product                      Total\n`;
         formattedData += `---------------------------------\n`;
 
@@ -566,8 +566,8 @@
         formattedData += `Shipping Fee${' '.repeat(30 - 'Shipping Fee'.length)} $${shippingFee.toFixed(2)}\n`;
         formattedData += `---------------------------------\n`;
         formattedData += `Grand Total${' '.repeat(30 - 'Grand Total'.length)} $${grandTotal.toFixed(2)}\n\n`;
-        formattedData += `If you have any questions or need further assistance, please feel free to contact our customer support.\n\n`;
-        formattedData += `Thank you for choosing our products!\n\nBest regards,`;
+        formattedData += `Kindly arrange for the courier of the ordered items to the respective buyers as per the provided quantities.\n\nIf you have any questions or require further assistance, please feel free to reach out to our customer support.\n\n`;
+        formattedData += `We appreciate your prompt attention to this matter.\n\nThank you for your dedicated service.\n\nBest regards,`;
 
         function sendEmail() {
             console.log("sendEmail");
