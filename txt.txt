@@ -1,0 +1,49 @@
+<div class="header sticky-header section">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <!-- Logo Start -->
+                <div class="col-lg-2 col">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="./assets/images/logo/logo-dark.png" width="150" height="67" alt="kofi logo">
+
+
+                        </a>
+                    </div>
+                </div>
+                <!-- Logo End -->
+
+                <!-- Menu Start -->
+                <div class="col d-none d-lg-block">
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop-Herbs & Spices.html">Herbs & Spices</a></li>
+                            <li><a href="shop-Essentail Oil.html">Essential Oil </a></li>
+                            <li><a href="shop-Beverages.html">Beverages </a></li>
+                            <li><a href="shop-Culture.html">Culture</a></li>
+
+                            <li class="has-sub-menu">
+                                <a href="about-us.html">Explore</a>
+                                <ul class="sub-menu">
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub-menu">
+                                <a href="blog-no-sidebar.html">Blog</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog-no-sidebar.html">Blogs</a></li>
+                                    <li><a href="blog-details-left-sidebar.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Menu End -->
+            </div>
+        </div>
+    </div>

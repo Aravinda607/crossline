@@ -17,170 +17,75 @@
     <!-- Fonts CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-
     <!-- Vendor CSS (Bootstrap & Icon Font) -->
-    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <!-- Icons CSS -->
     <link rel="stylesheet" href="./assets/css/plugins/simple-line-icons.min.css">
 
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="./assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/css/plugins/magnific-popup.css">
-    <link rel="stylesheet" href="./assets/css/plugins/ion.rangeSlider.min.css">
+    <!-- <link rel="stylesheet" href="./assets/css/plugins/magnific-popup.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/plugins/ion.rangeSlider.min.css"> -->
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
 
 </head>
 
 <body>
 
-    <div class="header sticky-header section">
+   <nav class="navbar navbar-expand-lg fixed-top bg-color navbar-dark">
         <div class="container-fluid">
-            <div class="row align-items-center">
-
-                <!-- Logo Start -->
-                <div class="col-lg-2 col">
-                    <div class="header-logo">
-                        <a href="index.html">
-                            <img src="./assets/images/logo/logo-dark.png" width="150" height="67" alt="kofi logo">
-
-
-                        </a>
-                    </div>
-                </div>
-                <!-- Logo End -->
-
-                <!-- Menu Start -->
-                <div class="col d-none d-lg-block">
-                    <nav class="main-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="shop-Herbs & Spices.html">Herbs & Spices</a></li>
-                            <li><a href="shop-Essentail Oil.html">Essential Oil </a></li>
-                            <li><a href="shop-Beverages.html">Beverages </a></li>
-                            <li><a href="shop-Culture.html">Culture</a></li>
-
-                            <li class="has-sub-menu">
-                                <a href="about-us.html">Explore</a>
-                                <ul class="sub-menu">
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-sub-menu">
-                                <a href="blog-no-sidebar.html">Blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-no-sidebar.html">Blogs</a></li>
-                                    <li><a href="blog-details-left-sidebar.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact Us</a></li>
-
-                        </ul>
-                    </nav>
-                </div>
-                <!-- Menu End -->
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo/logo-dark.png"></a>
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="shop-Herbs & Spices.html">Herbs & Spices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="shop-Essentail Oil.html">Essential Oil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="shop-Beverages.html">Beverages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="shop-Culture.html">Culture</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-item-name dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+                  <ul class="dropdown-menu  bg-color" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-item-name dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                  <ul class="dropdown-menu  bg-color" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="blog-no-sidebar.html">Blogs</a></li>
+                    <li><a class="dropdown-item" href="blog-details-left-sidebar.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
             </div>
         </div>
-    </div>
+      </nav>
 
-    <div class="offcanvas offcanvas-end" id="offcanvas-header">
-        <div class="offcanvas-header">
-            <h5>Mobile Menu</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <nav class="mobile-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="index.html">Home One</a></li>
-                            <li><a href="index-2.html">Home Two</a></li>
-                            <li><a href="index-3.html">Home Three</a></li>
-                            <li><a href="index-4.html">Home Four</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="shop-left-sidebar.html">Shop</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li>
-                                <a href="shop.html">Shop Grid Layout</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="shop-left-sidebar.html">Shop Grid Left Sidebar</a></li>
-                                    <li><a href="shop-right-sidebar.html">Shop Grid Right Sidebar</a></li>
-                                    <li><a href="shop-3-column.html">Shop Grid 3 Column (no sidebar)</a></li>
-                                    <li><a href="shop-4-column.html">Shop Grid 4 Column (no sidebar)</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index-2.html">Shop List Layout</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a></li>
-                                    <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
-                                    <li><a href="shop-list-no-sidebar.html">Shop List (no sidebar)</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index-3.html">Product Pages</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="./product-details-Beverages-Coffee.html">Product Details</a></li>
-                                    <li><a href="product-details-sticky-content.html">Product Details Sticky Content</a>
-                                    </li>
-                                    <li><a href="product-details-thumbnail-right.html">Product Details Right
-                                            Thumbnail</a></li>
-                                    <li><a href="product-details-gallery.html">Product Details Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index-4.html">Others</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                    <li><a href="my-account.html">My Account</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index.html">Pages</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blog-left-sidebar.html">Blog</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                            <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                            <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                            <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    
 
     <!-- Slider Section Start -->
     <div class="h2-hero-section section">
@@ -189,7 +94,7 @@
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide hero-slide-2 bg-dark"
-                    style="background-image: url(./assets/images/hero-slider/home-2/slide-1.jpg);">
+                    style="background-image: url(./assets/images/banner/herb.png);">
                     <div class="container">
                         <div class="hero-slide-2-content">
                             <h5 class="hero-slide-2-sub-title"></h5>
@@ -197,7 +102,7 @@
                             <p class="hero-slide-2-text">Learn more about how we're connecting the best Asian flavor to
                                 the world.</p>
                             <div class="hero-slide-2-button">
-                                <a href="shop-left-sidebar.html" class="btn btn-primary btn-dark-hover">Explore More <i
+                                <a href="shop-left-sidebar.html" class="btn btn-primary btn-dark-hover slider-btn">Explore More <i
                                         class="sli-basket-loaded"></i></a>
                             </div>
                         </div>
