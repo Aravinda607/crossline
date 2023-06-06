@@ -121,12 +121,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-}
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -4431,10 +4425,14 @@ textarea.form-field:focus {
   flex: 1 0 50px;
   max-width: 50px;
 }
-.feature-1 .feature-icon svg {
-  width: 100%;
+.feature-1 .feature-icon img {
   height: auto;
 }
+
+.feature-1 .feature-content {
+  padding-left: 10%;
+}
+
 .feature-1 .feature-title {
   font-size: 24px;
   margin-bottom: 10px;

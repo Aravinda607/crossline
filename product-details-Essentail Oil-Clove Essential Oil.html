@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
 
     <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
 
@@ -34,60 +34,59 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
 
 </head>
 
 <body>
 
-    <div class="header sticky-header section">
+    <nav class="navbar navbar-expand-lg fixed-top bg-color navbar-dark">
         <div class="container-fluid">
-            <div class="row align-items-center">
-
-                <!-- Logo Start -->
-                <div class="col-lg-2 col">
-                    <div class="header-logo">
-                        <a href="index.html">
-                            <img src="./assets/images/logo/logo-dark.png" width="150" height="67" alt="kofi logo">
-
-
-                        </a>
-                    </div>
-                </div>
-                <!-- Logo End -->
-
-                <!-- Menu Start -->
-                <div class="col d-none d-lg-block">
-                    <nav class="main-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="shop-Herbs & Spices.html">Herbs & Spices</a></li>
-                            <li><a href="shop-Essentail Oil.html">Essential Oil </a></li>
-                            <li><a href="shop-Beverages.html">Beverages </a></li>
-                            <li><a href="shop-Culture.html">Culture</a></li>
-
-                            <li class="has-sub-menu">
-                                <a href="about-us.html">Explore</a>
-                                <ul class="sub-menu">
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-sub-menu">
-                                <a href="blog-no-sidebar.html">Blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-no-sidebar.html">Blogs</a></li>
-                                    <li><a href="blog-details-left-sidebar.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact Us</a></li>
-
-                        </ul>
-                    </nav>
-                </div>
-                <!-- Menu End -->
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo/logo-dark.png"></a>
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="shop-Herbs & Spices.html">Herbs & Spices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="shop-Essentail Oil.html">Essential Oil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="shop-Beverages.html">Beverages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" aria-current="page" href="shop-Culture.html">Culture</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-item-name dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+                  <ul class="dropdown-menu  bg-color" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-item-name dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                  <ul class="dropdown-menu  bg-color" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="blog-no-sidebar.html">Blogs</a></li>
+                    <li><a class="dropdown-item" href="blog-details-left-sidebar.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-name" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
             </div>
         </div>
-    </div>
+   </nav>
+
     <div class="offcanvas offcanvas-end w-100 bg-dark border-0" id="offcanvas-search">
         <div class="offcanvas-body d-flex align-items-center justify-content-center">
             <button type="button" class="btn-close offcanvas-search-close-btn text-white" data-bs-dismiss="offcanvas"
