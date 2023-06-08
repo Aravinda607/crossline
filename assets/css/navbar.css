@@ -12,10 +12,15 @@
             padding: 1% 0 1% 0;
         }
 
+        
+        .shp-cart-sm{
+            padding-top: 1%;
+        }
+
         .nav-item-name{
             font-weight: 400;
             margin: 0 25px;
-            font-size: 20px;
+            font-size: 120%;
             color: #9c7a44;
         }
 
