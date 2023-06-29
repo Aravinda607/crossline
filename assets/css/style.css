@@ -854,14 +854,14 @@ hr {
 
 /* Other Sections Styles */
 .h1-coffee-menu-section {
-  background-image: url(../images/coffee-menu/coffee-menu-bg.png);
+  background-image: url(../images/Picture1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .h1-testimonial-section {
-  background-image: url(../images/testimonial/testimonial-bg.png);
+  background-image: url(../images/Picture1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -869,7 +869,7 @@ hr {
 
 .h2-testimonial-section,
 .h4-testimonial-section {
-  background-image: url(../images/testimonial/testimonial-bg.png);
+  background-image: url(../images/Picture1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4400,7 +4400,7 @@ textarea.form-field:focus {
 .feature-1 {
   display: flex;
   max-width: 410px;
-  gap: 20px;
+  gap: 15px;
 }
 .feature-1.reverse {
   flex-direction: row-reverse;

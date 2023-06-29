@@ -38,6 +38,66 @@
     <!-- FA-ICON pack -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
+
+    <style>
+
+        .partner-section{
+            padding: 5% 25% 5% 25%;
+            background-color: #b4a272;
+            text-align: justify;
+            font-weight: 500;
+        }
+
+        .partner-section h2{
+            padding: 5%;
+            text-align: center;
+        }
+
+        .second-colour{
+            color: rgb(255, 255, 255);
+        }
+
+        #paragraph {
+            display:none;
+        }
+
+        #paragraph2 {
+            display:none;
+        }
+
+        #paragraph3 {
+            display:none;
+        }
+
+        #viewbutton{
+            display: block;
+        }
+
+        #viewbutton2{
+            display: block;
+        }
+
+        #viewbutton3{
+            display: block;
+        }
+
+        #hidebutton{
+            display: none;
+        }
+
+        #hidebutton2{
+            display: none;
+        }
+
+        #hidebutton3{
+            display: none;
+        }
+
+        button{
+            border-style: none;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -92,156 +152,6 @@
         </div>
    </nav>
 
-    <div class="offcanvas offcanvas-end w-100 bg-dark border-0" id="offcanvas-search">
-        <div class="offcanvas-body d-flex align-items-center justify-content-center">
-            <button type="button" class="btn-close offcanvas-search-close-btn text-white" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-            <div class="offcanvas-search-form">
-                <form action="#">
-                    <input type="search" name="q" placeholder="Search our store">
-                    <button type="submit"><i class="sli-magnifier"></i></button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="offcanvas offcanvas-end" id="offcanvas-cart">
-        <div class="offcanvas-header">
-            <h5>Shoping Cart</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body d-flex flex-column">
-            <div class="header-cart-body">
-                <div class="header-cart-products">
-                    <div class="header-cart-product">
-                        <div class="header-cart-product-thumb">
-                            <a href="./product-details-Beverages-Coffee.html" class="header-cart-product-image"><img
-                                    src="./assets/images/products/cart/product-1.jpg" alt="House Coffee Original"
-                                    width="90" height="103"></a>
-                            <button class="header-cart-product-remove"><i class="sli-close"></i></button>
-                        </div>
-                        <div class="header-cart-product-content">
-                            <h5 class="header-cart-product-title"><a
-                                    href="./product-details-Beverages-Coffee.html">House Coffee Original</a></h5>
-                            <span class="header-cart-product-quantity">1 x $110.00</span>
-                        </div>
-                    </div>
-                    <div class="header-cart-product">
-                        <div class="header-cart-product-thumb">
-                            <a href="./product-details-Beverages-Coffee.html" class="header-cart-product-image"><img
-                                    src="./assets/images/products/cart/product-2.jpg" alt="Medium Roast Ground Coffee"
-                                    width="90" height="103"></a>
-                            <button class="header-cart-product-remove"><i class="sli-close"></i></button>
-                        </div>
-                        <div class="header-cart-product-content">
-                            <h5 class="header-cart-product-title"><a
-                                    href="./product-details-Beverages-Coffee.html">Medium Roast Ground Coffee</a></h5>
-                            <span class="header-cart-product-quantity">1 x $19.00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-cart-footer">
-                <h4 class="header-cart-total">Total: <span>$129.00</span></h4>
-                <div class="header-cart-buttons">
-                    <a href="checkout.html" class="btn btn-outline-dark btn-primary-hover">CHECKOUT</a>
-                    <a href="cart.html" class="btn btn-outline-dark btn-primary-hover">VIEW CART</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="offcanvas offcanvas-end" id="offcanvas-header">
-        <div class="offcanvas-header">
-            <h5>Mobile Menu</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <nav class="mobile-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="index.html">Home One</a></li>
-                            <li><a href="index-2.html">Home Two</a></li>
-                            <li><a href="index-3.html">Home Three</a></li>
-                            <li><a href="index-4.html">Home Four</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="shop-left-sidebar.html">Shop</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li>
-                                <a href="shop.html">Shop Grid Layout</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="shop-left-sidebar.html">Shop Grid Left Sidebar</a></li>
-                                    <li><a href="shop-right-sidebar.html">Shop Grid Right Sidebar</a></li>
-                                    <li><a href="shop-3-column.html">Shop Grid 3 Column (no sidebar)</a></li>
-                                    <li><a href="shop-4-column.html">Shop Grid 4 Column (no sidebar)</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index-2.html">Shop List Layout</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a></li>
-                                    <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
-                                    <li><a href="shop-list-no-sidebar.html">Shop List (no sidebar)</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index-3.html">Product Pages</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="./product-details-Beverages-Coffee.html">Product Details</a></li>
-                                    <li><a href="product-details-sticky-content.html">Product Details Sticky Content</a>
-                                    </li>
-                                    <li><a href="product-details-thumbnail-right.html">Product Details Right
-                                            Thumbnail</a></li>
-                                    <li><a href="product-details-gallery.html">Product Details Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index-4.html">Others</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                    <li><a href="my-account.html">My Account</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index.html">Pages</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blog-left-sidebar.html">Blog</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                            <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                            <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                            <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
     <!-- Page Banner Section Start -->
     <div class="page-banner-section section">
         <div class="container">
@@ -259,13 +169,14 @@
             <div class="row row-cols-lg-2 row-cols-1 mb-n8">
 
                 <div class="col mb-8">
-                    <img loading="lazy" src="./assets/images/others/about-us.png" alt="about us image" width="560"
-                        height="472">
+                    <!-- <img loading="lazy" src="./assets/images/others/about-us.png" alt="about us image" width="560" height="472"> -->
+                    <img loading="lazy" src="https://www.aicr.org/wp-content/uploads/2020/06/peppermint-tea-on-teacup-1417945.jpg" width="560" height="472">
                 </div>
 
                 <div class="col mb-8">
-                    <div class="section-title">
-                        <h2 class="sub-title"><span class="text-primary">CROSSLINE</span> ABOUT INFO</h2>
+                    <div class="section-title" style="text-align: justify;">
+                        <h2 class="sub-title"><span class="text-primary">Welcome to Crossline</span> - Your Gateway to the Exquisite Treasures of Sri Lanka</h2>
+                        <br/>
                         <p class="text">Asians have been known for their wonderful flavors of spices, silks, gems, and
                             oriental crafts since ancient times. Ceylon enhances the Asian flavor with the best tea and
                             coffee flavors and the finest spices in the world.</p>
@@ -285,14 +196,34 @@
         <div class="columns content">
             <div class="content-container">
                 <h5>OUR TRADEMARK BELONGS TO THE UNIQUE ISLAND OF SRI LANKA </h5>
-                <p>
-                    Its former name Ceylon is synonymous with the finest spices, crafts, tea and coffee and it is our
-                    ancient heritage that inspires us to build a new international platform that is equitable,
-                    transparent, and traceable.Crossline takes pride in its commitment to delivering suitability-sourced
-                    pure Sri Lankan product.
+                <p> &nbsp;&nbsp;&nbsp;At Crossline, our trademark proudly belongs to the unique island of Sri Lanka. 
+                    With its former name, Ceylon, being synonymous with the finest spices, crafts, tea, and coffee, 
+                    we draw inspiration from our ancient heritage to forge a new international platform that embodies principles of equity, transparency, 
+                    and traceability.
+                    <br><br>
+                    <span id="paragraph">
+                    &nbsp;&nbsp;&nbsp;We are driven by a deep sense of pride in our commitment to delivering sustainably-sourced, pure Sri Lankan products. The island of Sri Lanka, 
+                    with its lush landscapes and diverse ecosystems, provides the perfect backdrop for our quest to bring you the very best.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;From the vibrant spice gardens to the picturesque tea plantations, our journey begins with meticulous sourcing. 
+                    We take great care in selecting the highest quality ingredients and materials, ensuring that every product reflects the rich flavors and 
+                    craftsmanship for which Sri Lanka is renowned.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;Our dedication to sustainability goes hand in hand with our promise of authenticity. We believe in fostering a direct connection between you and 
+                    the source of our products. That's why we have established an international platform that is not only equitable but also transparent and traceable. 
+                    We want you to experience the journey of our products, from the moment they are lovingly grown and crafted to the moment they reach your hands.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;At Crossline, we invite you to immerse yourself in the unparalleled essence of Sri Lanka. Explore our range of spices that add depth and character to 
+                    your culinary creations. Discover our exquisite crafts that reflect the skill and artistry of our talented artisans. Delight in the aromatic charm of 
+                    our tea and coffee, meticulously cultivated to capture the essence of our land.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;Join us in celebrating the legacy of Ceylon, as we take great pride in sharing the remarkable flavors, traditions, and treasures of 
+                    Sri Lanka with the world. At Crossline, we are committed to delivering suitability-sourced pure Sri Lankan products that embody 
+                    the soul of our ancient heritage.
+                    </span>
                 </p>
 
-                <a href="about-us.html" class="button">Learn more</a>
+                <button onclick="trademarkFunction()" class="button" ><span id="viewbutton">Learn more</span><span id="hidebutton">Show Less</span></button>
             </div>
         </div>
         <div class="columns image image-container"
@@ -301,34 +232,77 @@
         </div>
     </div><br><br>
     <div class="section-container">
-        <div class="columns content">
-            <div class="content-container">
-                <h5>OUR COMMITMENT TO SUSTAINABILITY OUR TRADEMARK BELONGS TO THE UNIQUE ISLAND OF SRI LANKA </h5>
-                <p>
-                    Sustainable agricultural and sourcing practices have been the core of Sri Lanka's spice industry for
-                    centuries and we at Tropical Island are committed to preserving a promise and a tradition that form
-                    the foundation of Ceylon Spices' identity.
-                </p>
-
-                <a href="about-us.html" class="button">Learn more</a>
-            </div>
-        </div>
         <div class="columns image image-container"
             style="background-image:url('assets/images/testimonial/testimonial-bg-1.png')">
             &nbsp;
         </div>
+        <div class="columns content">
+            <div class="content-container">
+                <h5>OUR COMMITMENT TO SUSTAINABILITY OUR TRADEMARK BELONGS TO THE UNIQUE ISLAND OF SRI LANKA </h5>
+                <p> &nbsp;&nbsp;&nbsp;At Tropical Island, we hold a steadfast commitment to sustainability, guided by the knowledge that our trademark belongs to 
+                    the unique island of Sri Lanka. For centuries, the spice industry of Sri Lanka has thrived on sustainable agricultural and sourcing practices, 
+                    forming the very essence of Ceylon Spices' identity.
+                    <br><br>
+                    <span id="paragraph2">
+                    &nbsp;&nbsp;&nbsp;Preserving this promise and tradition is at the heart of our mission. We understand the profound impact our actions have on 
+                    the environment, local communities, and the future generations to come. With great responsibility, we strive to ensure that our practices not 
+                    only protect but enhance the natural ecosystems that nurture our precious spices.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;From the fertile soils of our plantations to the hands that carefully cultivate and harvest each spice, sustainability is 
+                    ingrained in every step of our process. We prioritize responsible farming methods that prioritize biodiversity, conservation, and the well-being 
+                    of our farmers. By working hand in hand with local communities, we promote fair trade practices and create opportunities for economic growth and 
+                    empowerment.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;Transparency is a key pillar of our commitment to sustainability. We believe that our customers have the right to know the 
+                    journey their spices embark upon before reaching their kitchens. Through traceability initiatives, we provide a clear and concise picture of 
+                    our sourcing practices, ensuring that each product meets the highest standards of quality and ethical production.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;As custodians of the land and stewards of tradition, we strive to set an example for the industry by embracing innovative and 
+                    sustainable solutions. By investing in research, education, and technological advancements, we continuously improve our practices and minimize our 
+                    ecological footprint.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;At Tropical Island, we invite you to savor the flavors of Ceylon Spices with the knowledge that each spice you enjoy represents 
+                    our unwavering dedication to sustainability. Together, let us cherish and protect the legacy of this unique island, ensuring that future generations 
+                    can continue to experience the unparalleled taste and aroma of Sri Lanka's finest spices.
+                    </span>
+                </p>
+                <button onclick="commitmentFunction()" class="button" ><span id="viewbutton2">Learn more</span><span id="hidebutton2">Show Less</span></button>
+            </div>
+        </div>
+        
     </div><br><br>
     <div class="section-container">
         <div class="columns content">
             <div class="content-container">
                 <h5>Our Responsibility</h5>
-                <p>
-                    To provide the world with the most delicious and sustainably sourced Asian flavors that enhance
-                    physical, mental, and spiritual health, while empowering local communities and preserving the
-                    environment
+                <p> &nbsp;&nbsp;&nbsp;At our core, we recognize our responsibility to the world. It is our mission to bring forth the most delicious Asian flavors while upholding our 
+                    commitment to sustainability, fostering physical, mental, and spiritual well-being. We understand that our actions have far-reaching consequences, 
+                    and we strive to make a positive impact on local communities and the environment.
+                    <br><br>
+                    <span id="paragraph3">
+                    &nbsp;&nbsp;&nbsp;Our dedication to sustainability goes hand in hand with our pursuit of flavor excellence. We believe that true culinary delight should not come at 
+                    the expense of the planet or the people involved in its creation. That's why we go the extra mile to ensure that our ingredients are sourced in a 
+                    way that respects the natural ecosystems and supports the livelihoods of farmers and artisans.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;By working closely with local communities, we build strong relationships that empower them economically and culturally. 
+                    We prioritize fair trade practices, providing equitable opportunities for growth and development. Through our partnerships, we aim to uplift these 
+                    communities and celebrate the rich traditions that inspire our flavors.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;Preserving the environment is a fundamental part of our ethos. We recognize the interconnectedness of all living beings and the 
+                    vital role that nature plays in our existence. We actively seek sustainable farming methods, minimize our carbon footprint, and support initiatives 
+                    that protect biodiversity. Our goal is to leave a positive legacy for future generations, ensuring that the world we pass on to them is vibrant and 
+                    thriving.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;We believe that food has the power to nourish not only the body but also the mind and spirit. Our flavors are carefully crafted 
+                    to provide not just a delightful taste but also a holistic experience. We believe in the transformative power of food to bring joy, comfort, and a 
+                    sense of connection to oneself and to others.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;Join us on this journey of flavor and responsibility. Together, let us savor the most delicious Asian flavors while making a 
+                    positive difference in the world.
+                    </span>
                 </p>
 
-                <a href="about-us.html" class="button">Learn more</a>
+                <button onclick="responsibilityFunction()" class="button" ><span id="viewbutton3">Learn more</span><span id="hidebutton3">Show Less</span></button>
             </div>
         </div>
         <div class="columns image image-container"
@@ -359,10 +333,9 @@
 
                             </div>
                             <div class="team-content">
-                                <h4 class="team-name">Ceylon Nutmeg</h4>
-                                <p class="team-title">Celebrated for its warm and musky flavour and sweet fragrance,
-                                    Ceylon Nutmeg is a versatile spice that delivers a wide range of flavour notes
-                                    depending on how it is used and the presence or absence of the shell</p>
+                                <h4 class="team-name">Cinnamon</h4>
+                                <p class="team-title">Exquisite Ceylon spice known for its exceptional flavor and numerous health benefits. 
+                                    Elevate your dishes with this aromatic and versatile ingredient.</p>
                             </div>
                         </div>
                     </div>
@@ -374,10 +347,9 @@
 
                             </div>
                             <div class="team-content">
-                                <h4 class="team-name">Ceylon Cardamom</h4>
-                                <p class="team-title">Known for its light green pod colour and unique flavour, Ceylon
-                                    Cardamom from Tropical Island is locally grown and naturally processed to preserve
-                                    its goodness.</p>
+                                <h4 class="team-name">Pepper</h4>
+                                <p class="team-title">: Premium-quality pepper sourced from the finest farms. 
+                                    Add a bold and distinct flavor to your culinary creations with this essential spice.</p>
                             </div>
                         </div>
                     </div>
@@ -389,11 +361,9 @@
 
                             </div>
                             <div class="team-content">
-                                <h4 class="team-name">Mace</h4>
-                                <p class="team-title">Made from the delicate outer cover of Ceylon Nutmeg, the blades of
-                                    Mace are removed by hand and slowly sun-dried, enhancing its bitter citrus and
-                                    floral notes. Tropical Island Mace has a unique flavour that is aromatic, and spicy,
-                                    yet pungent.</p>
+                                <h4 class="team-name">Clove</h4>
+                                <p class="team-title">Warm and aromatic spice that adds a touch of sweetness and complexity to both sweet and savory dishes. 
+                                    Experience its rich and comforting flavor..</p>
                             </div>
                         </div>
                     </div>
@@ -405,8 +375,9 @@
 
                             </div>
                             <div class="team-content">
-                                <h4 class="team-name">Ms. Sophia</h4>
-                                <p class="team-title">Chairmen</p>
+                                <h4 class="team-name">Cardamom</h4>
+                                <p class="team-title">Exotic and fragrant spice with a unique blend of sweet and savory notes. 
+                                    Enhance your recipes with the captivating taste of cardamom.</p>
                             </div>
                         </div>
                     </div>
@@ -418,12 +389,112 @@
 
                             </div>
                             <div class="team-content">
-                                <h4 class="team-name">Ms. Lee</h4>
-                                <p class="team-title">Marketer</p>
+                                <h4 class="team-name">Nutmeg & Mace</h4>
+                                <p class="team-title">Aromatic duo with warm and slightly sweet flavors. Sprinkle this flavorful combination 
+                                    to add depth and richness to your culinary masterpieces.</p>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="team">
+                            <div class="team-thumb">
+                                <img loading="lazy" src="./assets/images/team/team-4.png" alt="Ms. Lee" width="270"
+                                    height="324">
 
+                            </div>
+                            <div class="team-content">
+                                <h4 class="team-name">Ceylon Cinnamon Oil</h4>
+                                <p class="team-title">: Pure and potent oil extracted from Ceylon cinnamon. Discover its rich aroma and potential 
+                                    health benefits for culinary and wellness applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team">
+                            <div class="team-thumb">
+                                <img loading="lazy" src="./assets/images/team/team-4.png" alt="Ms. Lee" width="270"
+                                    height="324">
+
+                            </div>
+                            <div class="team-content">
+                                <h4 class="team-name">Clove Essential Oil</h4>
+                                <p class="team-title">Invigorating and versatile essential oil derived from cloves. Enjoy its soothing aroma and 
+                                    explore its various uses in aromatherapy and personal care.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team">
+                            <div class="team-thumb">
+                                <img loading="lazy" src="./assets/images/team/team-4.png" alt="Ms. Lee" width="270"
+                                    height="324">
+
+                            </div>
+                            <div class="team-content">
+                                <h4 class="team-name">Citronella Oil</h4>
+                                <p class="team-title">Refreshing and uplifting oil known for its insect-repelling properties. Harness its invigorating scent 
+                                    to create a pleasant and bug-free environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team">
+                            <div class="team-thumb">
+                                <img loading="lazy" src="./assets/images/team/team-4.png" alt="Ms. Lee" width="270"
+                                    height="324">
+
+                            </div>
+                            <div class="team-content">
+                                <h4 class="team-name">Tea</h4>
+                                <p class="team-title">Handpicked and expertly crafted teas that captivate your senses. 
+                                    From delicate and floral to robust and bold, experience the diverse flavors of our premium tea selection.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="team">
+                            <div class="team-thumb">
+                                <img loading="lazy" src="./assets/images/team/team-4.png" alt="Ms. Lee" width="270"
+                                    height="324">
+
+                            </div>
+                            <div class="team-content">
+                                <h4 class="team-name">Coffee</h4>
+                                <p class="team-title">Finest coffee beans carefully selected and expertly roasted to perfection. Awaken your 
+                                    senses with the rich and nuanced flavors of our exceptional coffee.
+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team">
+                            <div class="team-thumb">
+                                <img loading="lazy" src="./assets/images/team/team-4.png" alt="Ms. Lee" width="270"
+                                    height="324">
+
+                            </div>
+                            <div class="team-content">
+                                <h4 class="team-name">Cane Products</h4>
+                                <p class="team-title">Naturally sweet and flavorful products made from pure cane. 
+                                    Indulge in the richness of jaggery, molasses, and other cane-derived delights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team">
+                            <div class="team-thumb">
+                                <img loading="lazy" src="./assets/images/team/team-4.png" alt="Ms. Lee" width="270"
+                                    height="324">
+
+                            </div>
+                            <div class="team-content">
+                                <h4 class="team-name">Pottery</h4>
+                                <p class="team-title">Handcrafted pottery showcasing the artistic heritage of Sri Lanka. Each piece reflects the 
+                                    skill and passion of our artisans, adding elegance to your space.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="swiper-pagination d-md-none"></div>
@@ -434,6 +505,28 @@
         </div>
     </div>
     <!-- Team Section End -->
+
+
+    <div class="section-title partner-section">
+        <img src="/assets/images/group.png" width="10%" style="margin: 0% 45% 0% 45%;">
+        <h2 class="sub-title"><span class="second-colour">Become</span>  Partner</h2>
+            <p class="feature-text">Are you ready to embark on a remarkable business journey? Crossline invites you to become a valued partner and join us in revolutionizing 
+                the world of flavors, craftsmanship, and cultural treasures. As a Crossline Partner, you'll unlock unparalleled opportunities to grow your business and 
+                establish yourself as a trusted authority in the industry.
+            </p>
+            <p class="feature-text">we have a profound responsibility to provide the world with the most delicious and sustainably sourced Asian flavors. 
+                We believe that food has the power to nourish not only our bodies but also our minds and spirits. That's why we go beyond taste alone, prioritizing 
+                the well-being of our consumers on multiple levels. We aspire to create a thriving ecosystem where partners flourish. By working hand in hand, 
+                we'll achieve milestones that surpass expectations, bringing joy and satisfaction to customers worldwide. We invite you to be part of this 
+                extraordinary journey.
+            </p>
+            <p class="feature-text">Are you ready to make a lasting impact in the world of flavors and craftsmanship? Join Crossline as a trusted partner and empower 
+                your business like never before. Let's create a legacy that transcends boundaries and celebrates the beauty and richness of our products.
+            </p>
+            <p class="feature-text">Take the first step towards an exhilarating partnership with Crossline today. Together, we'll shape the future of exquisite 
+                treasures and captivate the hearts of customers around the globe.
+            </p>
+    </div>
 
     <!-- Gallery Section Start -->
     <div class="h1-gallery-section section section-padding pt-0">
@@ -619,6 +712,52 @@
 
     <!-- Activation JS -->
     <script src="./assets/js/active.js"></script>
+
+    <!-- JS -->
+    <script>
+    function trademarkFunction() {
+        var x = document.getElementById("paragraph");
+        var y = document.getElementById("viewbutton");
+        var z = document.getElementById("hidebutton");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+    }
+    function commitmentFunction() {
+        var x = document.getElementById("paragraph2");
+        var y = document.getElementById("viewbutton2");
+        var z = document.getElementById("hidebutton2");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+    }
+    function responsibilityFunction() {
+        var x = document.getElementById("paragraph3");
+        var y = document.getElementById("viewbutton3");
+        var z = document.getElementById("hidebutton3");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+    }
+    </script>
 
 </body>
 
